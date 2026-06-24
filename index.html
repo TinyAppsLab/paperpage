@@ -8,6 +8,7 @@
   <style>
     :root { --red: rgb(196,49,38); --ink:#111; --muted:#666; --paper:#fbf8f3; --line:#ebe4da; }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:radial-gradient(circle at top,#fff 0%,var(--paper) 58%,#f6efe6 100%); color:var(--ink); line-height:1.5; }
     .wrap { width:min(1120px, calc(100% - 40px)); margin:0 auto; }
     header { padding:28px 0; display:flex; align-items:center; justify-content:space-between; }
@@ -34,7 +35,6 @@
     .privacy { background:rgba(255,255,255,.7); border:1px solid var(--line); border-radius:32px; padding:30px; }
     .privacy h3 { margin-top:28px; margin-bottom:8px; }
     footer { padding:36px 0 60px; color:var(--muted); font-size:14px; }
-    footer a, .privacy a { color:var(--ink); }
     @media (max-width:850px) {
       header { align-items:flex-start; gap:16px; }
       nav a { margin-left:10px; font-size:14px; }
@@ -47,7 +47,11 @@
 <body>
   <header class="wrap">
     <div class="brand"><img src="icon.png" alt="Paper Page app icon" /><span>Paper Page</span></div>
-    <nav><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="mailto:YOUR-EMAIL@example.com">Contact</a></nav>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
@@ -81,18 +85,25 @@
         <div class="privacy">
           <h2>Privacy Policy</h2>
           <p><strong>Last updated:</strong> June 2026</p>
+
           <h3>Information We Collect</h3>
           <p>Paper Page does not collect, store, transmit, or share any personal information. Tasks, notes and other information created in the app are stored locally on your device.</p>
+
           <h3>Data Sharing</h3>
           <p>The app does not share any information with third parties.</p>
+
           <h3>Analytics and Tracking</h3>
           <p>The app does not use analytics, advertising networks, tracking technologies, or profiling.</p>
+
           <h3>Data Storage</h3>
           <p>All content created by the user remains on the user’s device unless the user chooses to back up or transfer their device using Apple services.</p>
+
           <h3>Children’s Privacy</h3>
           <p>The app does not knowingly collect personal information from children.</p>
-          <h3>Contact</h3>
-          <p>If you have any questions about this Privacy Policy, contact the developer at: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p>
+
+          <h3 id="contact">Contact</h3>
+          <p>If you have any questions about this Privacy Policy, contact the developer at: <strong>abc@abc.com</strong></p>
+
           <h3>Changes</h3>
           <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page.</p>
         </div>
