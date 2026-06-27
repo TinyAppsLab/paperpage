@@ -110,17 +110,46 @@ h1 span { color: var(--red); }
 
 .manifest p { margin: 12px 0; }
 
-.button {
+.app-store-badge {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 14px 22px;
-  border-radius: 999px;
-  background: var(--ink);
-  color: white;
+  gap: 10px;
+  margin-top: 32px;
+  padding: 9px 18px 10px;
+  min-width: 190px;
+  border-radius: 14px;
+  background: #000;
+  color: #fff;
   text-decoration: none;
+  box-shadow: 0 12px 30px rgba(0,0,0,.16);
+}
+
+.app-store-badge:hover {
+  transform: translateY(-1px);
+}
+
+.apple-mark {
+  font-size: 34px;
+  line-height: 1;
+  margin-top: -2px;
+}
+
+.app-store-badge span:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.05;
+}
+
+.app-store-badge small {
+  font-size: 11px;
+  letter-spacing: .02em;
+}
+
+.app-store-badge strong {
+  font-size: 24px;
   font-weight: 700;
-  margin-top: 30px;
+  letter-spacing: -.02em;
 }
 
 .preview {

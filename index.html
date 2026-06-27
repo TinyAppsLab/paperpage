@@ -3,8 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Paper Page — Your digital paper page</title>
   <meta name="description" content="Paper Page is a simple digital paper page for thoughts, ideas and things you don't want to forget." />
+
+  <link rel="icon" type="image/png" href="icon-en.png" />
+  <link rel="apple-touch-icon" href="icon-en.png" />
+
+  <meta property="og:title" content="Paper Page — Your digital paper page" />
+  <meta property="og:description" content="A simple digital paper page for thoughts, ideas and things you don't want to forget." />
+  <meta property="og:image" content="screenshot-en.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Paper Page — Your digital paper page" />
+  <meta name="twitter:description" content="A simple digital paper page for thoughts, ideas and things you don't want to forget." />
+  <meta name="twitter:image" content="screenshot-en.png" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -34,8 +49,12 @@
         <p><strong id="line4">Just a place for your thoughts.</strong></p>
       </div>
 
-      <a id="appStoreButton" class="button" href="#" aria-label="App Store link coming soon">
-        Available on the App Store
+      <a id="appStoreButton" class="app-store-badge" href="https://apps.apple.com/pl/app/kartka-papieru/id6783930297?l=pl" target="_blank" rel="noopener" aria-label="Download on the App Store">
+        <span class="apple-mark"></span>
+        <span>
+          <small id="badgeSmall">Download on the</small>
+          <strong id="badgeBig">App Store</strong>
+        </span>
       </a>
 
       <img id="preview" class="preview" src="screenshot-en.png" alt="Paper Page preview" />

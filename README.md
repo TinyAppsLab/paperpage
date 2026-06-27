@@ -2,14 +2,9 @@
 
 Bilingual GitHub Pages site for Paper Page.
 
-Upload all files directly to the root of your GitHub repository:
+App Store:
+https://apps.apple.com/pl/app/kartka-papieru/id6783930297?l=pl
 
-- index.html
-- style.css
-- script.js
-- icon-en.png
-- icon-pl.png
-- screenshot-en.png
-- screenshot-pl.png
+Upload all files directly to the root of your GitHub repository.
 
 No folders are required.

@@ -10,7 +10,8 @@ const content = {
     line2: "No reminders.",
     line3: "No due dates.",
     line4: "Just a place for your thoughts.",
-    button: "Available on the App Store",
+    badgeSmall: "Download on the",
+    badgeBig: "App Store",
     privacyTitle: "Privacy Policy",
     updatedLabel: "Last updated:",
     privacyH1: "Information We Collect",
@@ -42,7 +43,8 @@ const content = {
     line2: "Bez przypomnień.",
     line3: "Bez terminów.",
     line4: "Po prostu miejsce na Twoje myśli.",
-    button: "Dostępna w App Store",
+    badgeSmall: "Pobierz z",
+    badgeBig: "App Store",
     privacyTitle: "Polityka prywatności",
     updatedLabel: "Ostatnia aktualizacja:",
     privacyH1: "Informacje, które zbieramy",
@@ -64,6 +66,8 @@ const content = {
   }
 };
 
+const appStoreUrl = "https://apps.apple.com/pl/app/kartka-papieru/id6783930297?l=pl";
+
 function setLang(lang) {
   const t = content[lang];
 
@@ -80,7 +84,10 @@ function setLang(lang) {
   document.getElementById("line2").textContent = t.line2;
   document.getElementById("line3").textContent = t.line3;
   document.getElementById("line4").textContent = t.line4;
-  document.getElementById("appStoreButton").textContent = t.button;
+
+  document.getElementById("appStoreButton").href = appStoreUrl;
+  document.getElementById("badgeSmall").textContent = t.badgeSmall;
+  document.getElementById("badgeBig").textContent = t.badgeBig;
 
   document.getElementById("privacyTitle").textContent = t.privacyTitle;
   document.getElementById("updatedLabel").textContent = t.updatedLabel;
